@@ -1,68 +1,87 @@
-# 🎙️ Customer Support Voice Agent
+# 🎙️ Tactara Voice Agent for Customer Support
 
-An OpenAI SDK powered customer support agent application that delivers voice-powered responses to questions about your knowledge base using OpenAI's GPT-4o and TTS capabilities. The system crawls through documentation websites with Firecrawl, processes the content into a searchable knowledge base with Qdrant, and provides both text and voice responses to user queries.
+**Conversational support, reimagined with OpenAI.**
 
-## Features
+Tactara’s Voice Agent is a plug-and-play AI application that transforms your documentation into a real-time voice assistant for customer support. Built on OpenAI's GPT-4o and Text-to-Speech (TTS) stack, this system crawls through technical docs, generates semantic embeddings, and delivers answers in natural-sounding speech — all through a clean Streamlit UI.
 
-- Knowledge Base Creation
+---
 
-  - Crawls documentation websites using Firecrawl
-  - Stores and indexes content using Qdrant vector database
-  - Generates embeddings for semantic search capabilities using FastEmbed
-- **AI Agent Team**
-  - **Documentation Processor**: Analyzes documentation content and generates clear, concise responses to user queries
-  - **TTS Agent**: Converts text responses into natural-sounding speech with appropriate pacing and emphasis
-  - **Voice Customization**: Supports multiple OpenAI TTS voices:
-    - alloy, ash, ballad, coral, echo, fable, onyx, nova, sage, shimmer, verse
+## 🚀 Why Teams Choose Tactara
 
-- **Interactive Interface**
-  - Clean Streamlit UI with sidebar configuration
-  - Real-time documentation search and response generation
-  - Built-in audio player with download capability
-  - Progress indicators for system initialization and query processing
+### 🧠 Smart Knowledge Base Creation  
+- Crawls documentation using [Firecrawl](https://firecrawl.dev/)  
+- Parses and stores structured data in [Qdrant](https://qdrant.tech/)  
+- Embeddings via FastEmbed for lightning-fast semantic search
 
-## How to Run
+### 🤖 Modular AI Agent Architecture  
+- **Documentation Processor:** Translates structured docs into clear, human-readable answers  
+- **TTS Agent:** Converts answers into lifelike speech with adjustable voice options  
+- **Voice Customization:** Choose from multiple OpenAI voices like `nova`, `shimmer`, `onyx`, and more
 
-1. **Setup Environment**
-   ```bash
-   # Clone the repository
-   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-   cd awesome-llm-apps/ai_agent_tutorials/ai_voice_agent_openaisdk
-   
-   # Install dependencies
-   pip install -r requirements.txt
-   ```
+### 🧑‍💻 Developer-Friendly Interface  
+- Built with Streamlit for quick deployments  
+- Audio player with download support  
+- Live progress indicators for transparency during processing
 
-2. **Configure API Keys**
-   - Get OpenAI API key from [OpenAI Platform](https://platform.openai.com)
-   - Get Qdrant API key and URL from [Qdrant Cloud](https://cloud.qdrant.io)
-   - Get Firecrawl API key for documentation crawling
+---
 
-3. **Run the Application**
-   ```bash
-   streamlit run ai_voice_agent_docs.py
-   ```
+## 🛠️ Quickstart
 
-4. **Use the Interface**
-   - Enter API credentials in the sidebar
-   - Input the documentation URL you want to learn about
-   - Select your preferred voice from the dropdown
-   - Click "Initialize System" to process the documentation
-   - Ask questions and receive both text and voice responses
+### 1. Clone the Repo
 
-## Features in Detail
+```bash
+git clone https://github.com/Tactara/customer_support_voice_agent.git
+cd customer_support_voice_agent
+```
 
-- **Knowledge Base Creation**
-  - Builds a searchable knowledge base from your documentation
-  - Preserves document structure and metadata
-  - Supports multiple page crawling (limited to 5 pages per default configuration)
+### 2. Install Dependencies
 
-- **Vector Search**
-  - Uses FastEmbed for generating embeddings
-  - Semantic search capabilities for finding relevant content
-  - Efficient document retrieval using Qdrant
+```bash
+pip install -r requirements.txt
+```
 
-- **Voice Generation**
-  - High-quality text-to-speech using OpenAI's TTS models
-  - Multiple voice options for customization
-  - Natural speech patterns with proper pacing and emphasis
+### 3. Set Your API Keys  
+You'll need credentials from:
+- [OpenAI](https://platform.openai.com/)
+- [Qdrant Cloud](https://qdrant.tech/)
+- [Firecrawl](https://firecrawl.dev/)
+
+Update the config or input via the sidebar UI.
+
+### 4. Launch the App
+
+```bash
+streamlit run ai_voice_agent_docs.py
+```
+
+---
+
+## 💬 Using the Voice Agent
+
+- Enter your API keys via the Streamlit sidebar  
+- Paste a documentation URL (limit: 5 pages per crawl)  
+- Select a voice from the dropdown  
+- Click “Initialize System”  
+- Ask a question → Get spoken + written answers in real time
+
+---
+
+## 🔍 Under the Hood
+
+| Feature | Description |
+|--------|-------------|
+| 🔗 **Firecrawl** | Smart crawler that preserves structure & metadata |
+| 🧬 **FastEmbed + Qdrant** | Fast, semantic vector search for matching content |
+| 🗣️ **OpenAI TTS** | Natural-sounding responses with customizable voices |
+
+---
+
+## 🧩 Ideal For
+
+- Cloud Service Providers needing automated Tier-1 support  
+- Internal IT teams seeking self-service documentation tools  
+- Developer platforms with complex user documentation
+
+---
+
+**Built with ❤️ by [Tactara](https://www.tactara.ai)**
