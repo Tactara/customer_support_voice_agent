@@ -51,7 +51,7 @@ Update the config or input via the sidebar UI.
 ### 4. Launch the App
 
 ```bash
-streamlit run ai_voice_agent_docs.py
+streamlit run customer_support_voice_agent.py
 ```
 
 ---
